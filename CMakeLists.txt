@@ -19,6 +19,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Valve.msg"
   "msg/Gripper.msg"
 
+  "msg/JointControlEvent.msg"
+
   # Messages (Command - TX)
   "msg/MotorTxPdo.msg"
   "msg/MotorTxPdoVector.msg"
@@ -62,6 +64,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   # Services
   "srv/ReplCmd.srv"
   "srv/ReplInfo.srv"
+  "srv/MotorPowerRequest.srv"
 
   DEPENDENCIES std_msgs geometry_msgs action_msgs
 )

@@ -1,0 +1,12 @@
+uint8 ACTION_POWER_ON=1
+uint8 ACTION_POWER_OFF=2
+
+uint8 action
+uint32 control_mode
+string joint
+float32[5] gains
+
+---
+bool success
+bool outcome_unknown
+string message
