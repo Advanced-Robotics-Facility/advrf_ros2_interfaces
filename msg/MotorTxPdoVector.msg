@@ -1,1 +1,2 @@
-advrf_ros2_interfaces/MotorTxPdo[] data
+# Transactional motor command batch. Omitted motors retain their references.
+MotorTxPdo[] data
