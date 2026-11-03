@@ -2,10 +2,11 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>advrf_ros2_interfaces</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="manuel.delucchi@iit.it">mdelucchi</maintainer>
-  <license>TODO: License declaration</license>
+  <version>0.1.0</version>
+  <description>ADVRF ROS2 Interfaces</description>
+  <maintainer email="hugo.pousseur@iit.it">Hugo Pousseur</maintainer>
+  <maintainer email="manuel.delucchi@iit.it">Manuel Delucchi</maintainer>
+  <license>TODO</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
