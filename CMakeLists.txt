@@ -65,6 +65,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ReplCmd.srv"
   "srv/ReplInfo.srv"
   "srv/MotorPowerRequest.srv"
+  "srv/SetJointGains.srv"
 
   DEPENDENCIES std_msgs geometry_msgs action_msgs
 )

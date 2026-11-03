@@ -1,0 +1,6 @@
+# Replace all five PDO gain slots for one configured joint.
+string joint_name
+float64[5] gains
+---
+bool success
+string message
