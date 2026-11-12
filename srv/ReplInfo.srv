@@ -1,8 +1,0 @@
----
-std_msgs/Header header
-
-string info
-advrf_ros2_interfaces/TrjStatus trj_status
-advrf_ros2_interfaces/TmStats tm_stats
-
-bool success

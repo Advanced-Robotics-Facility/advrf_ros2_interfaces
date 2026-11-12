@@ -1,8 +1,0 @@
-advrf_ros2_interfaces/ReplCmdContent request
----
-std_msgs/Header header
-
-uint8 type
-bool success
-string msg
-string pdo

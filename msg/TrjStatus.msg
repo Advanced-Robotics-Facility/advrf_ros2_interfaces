@@ -1,2 +1,0 @@
-uint8 queue_size
-string running_trj

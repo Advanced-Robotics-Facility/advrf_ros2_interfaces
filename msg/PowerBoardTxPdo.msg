@@ -1,5 +1,0 @@
-int32 ecat_id
-uint32 master_command
-uint32 fault_ack
-uint32 op_idx_aux
-float32 aux
