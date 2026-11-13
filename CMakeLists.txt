@@ -9,19 +9,17 @@ find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   # Messages (State - RX)
-  "msg/Motor.msg"
+  "msg/MotorRxPdo.msg"
 
   "msg/JointControlEvent.msg"
 
   # Messages (Command - TX)
   "msg/MotorTxPdo.msg"
-  "msg/MotorTxPdoVector.msg"
 
   # Actions
   "action/GoToJointPositions.action"
 
   # Services
-  "srv/MotorPowerRequest.srv"
   "srv/SetJointGains.srv"
 
   DEPENDENCIES std_msgs action_msgs

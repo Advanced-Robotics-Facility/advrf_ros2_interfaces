@@ -5,7 +5,7 @@ ros version: jazzy
 
 ```bash
 ros2 interface list | grep advrf_ros2_interfaces
-ros2 interface show advrf_ros2_interfaces/msg/MotorTxPdoVector
+ros2 interface show advrf_ros2_interfaces/msg/MotorTxPdo
 ```
 
 ## Edit Config
@@ -18,9 +18,18 @@ This package defines interfaces and has no node executable.
 
 | Kind | Interfaces |
 | --- | --- |
-| Messages | `Motor`, `MotorTxPdo`, `MotorTxPdoVector`, `JointControlEvent` |
-| Services | `MotorPowerRequest`, `SetJointGains` |
+| Messages | `MotorRxPdo`, `MotorTxPdo`, `JointControlEvent` |
+| Services | `SetJointGains` |
 | Actions | `GoToJointPositions` |
+
+`MotorRxPdo` carries telemetry as parallel arrays and retains its snapshot timestamp.
+`MotorTxPdo` carries commands as parallel arrays: every array must have the same length
+as `ecat_id`, including unused fields filled with zero. A subset of motor IDs is allowed.
+`header.stamp` records command generation time; it is separate from the PDO `ts` field
+and does not replace the reception watchdog.
+
+This replaces the former `Motor` and `MotorTxPdoVector` interfaces. Rebuild and restart
+all publishers and subscribers together; the topic names remain unchanged.
 
 ## Dependencies
 
